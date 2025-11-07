@@ -5,6 +5,7 @@ from langchain.messages import SystemMessage,HumanMessage,AIMessage
 from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
 
+#Create a file named .env and upload your OpeanAI API key.If dont have one create one using this link:"https://platform.openai.com/"  
 load_dotenv()
 
 model = ChatOpenAI(model="gpt-4o-mini")
