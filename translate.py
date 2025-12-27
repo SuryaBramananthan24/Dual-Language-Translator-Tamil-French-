@@ -5,7 +5,8 @@ from langchain.messages import SystemMessage,HumanMessage,AIMessage
 from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
 
-#Create a file named .env and upload your OpeanAI API key.If dont have one create one using this link:"https://platform.openai.com/"  
+#Create a file named .env and upload your OpeanAI API key.
+# If dont have one create one using this link:"https://platform.openai.com/"  
 load_dotenv()
 
 model = ChatOpenAI(model="gpt-4o-mini")
@@ -30,7 +31,7 @@ chain = (RunnableParallel({
     })
 )
 print("AI : Hello!,I am a Multi-language Translator model.I translate any language into Tamil and French")
-print("AI : Provide Content to be translated")
+print("AI : Provide Content to be translate")
 msgs = []
 while True:
     usr_msg = input("You: ")
